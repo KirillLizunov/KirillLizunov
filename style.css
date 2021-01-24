@@ -1,0 +1,535 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    scroll-behavior: smooth;
+}
+.button {
+    display: block;
+    background: #7E57C2;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-family: sans-serif;
+}
+
+body {
+    background: url("Фон.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+header h2 {
+    font-family: sans-serif;
+    color: #555;
+    line-height: 50px;
+    padding-left: 5px;
+}
+#DesktopNav {
+    text-align: center;
+    background: #7E57C2;
+    /*padding: 0px 0px;*/
+    overflow: hidden;
+}
+
+#DesktopNav a {
+    margin: 0px 40px;
+    /*background: #E0E0E0;*/
+    text-decoration: none;
+    color: #fff;
+    padding: 20px 15px;
+    font-family: sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+#DesktopNav a:hover {
+    background: #673AB7;
+}
+
+.banner {
+    background: url("background.jpg");
+    height: 550px;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.banner p {
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-family: sans-serif;
+    color: dimgrey;
+}
+
+/*margin: top*/
+.banner h1 {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.banner a {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    font-family: sans-serif;
+    background: #7E57C2;
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 9px;
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner a:hover {
+    color: #FFEA00;
+    transition: 0.5s;
+}
+
+.AboutUs img {
+    width: 50%;
+    max-width: 400px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+    margin: 40px 0 50px;
+    font-family: sans-serif;
+}
+
+.AboutUs h4 {
+    /*    display: inline-block;*/
+    font-size: 20px;
+    margin: 0px 0px 15px;
+    color: #7E57C2;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.AboutUs p {
+    /*    display: inline-block;*/
+    text-align: left;
+    line-height: 25px;
+}
+.AboutUs p img {
+    display: none;
+}
+.AboutUs section {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    font-family: sans-serif;
+    margin-right: 25px;
+}
+
+.AboutUs {
+    text-align: center;
+}
+
+.departments section {
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    margin: 35px;
+    padding: 50px 0px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    color: ghostwhite;
+    font-family: sans-serif;
+}
+
+.departments section:first-of-type {
+    background-image: url("nycnike.jpg");
+}
+
+.departments section:nth-of-type(2) {
+    background-image: url("madridnike.jpg");
+}
+
+.departments section:nth-of-type(3) {
+    background-image: url("mscnike.jpg");
+}
+
+.departments {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.departments h4 {
+    margin-bottom: 25px;
+    font-size: 24px;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+
+.departments p {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.departments li {
+    margin-bottom: 10px;
+    color: ghostwhite;
+    font-size: 15px;
+    list-style: none;
+}
+
+.departments a {
+    margin-bottom: 10px;
+    color: ghostwhite;
+    font-size: 15px;
+}
+
+.departments ul {
+    /*    background: rgba(0,0,0,0.4);*/
+    padding: 0px 0px;
+}
+
+.departments section > a {
+    color: white;
+    background: #7E57C2;
+    padding: 5px 10px;
+    border-radius: 100px;
+    text-decoration: none;
+    margin: 5px;
+    display: inline-block;
+}
+
+.team {
+    max-width: 1400px;
+    margin: auto;
+    text-align: center;
+}
+
+.team section {
+    overflow: hidden;
+    width: 48%;
+    background: #fafafa;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.picture {
+    width: 50%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+.info {
+    width: calc(50% - 20px);
+    float: left;
+    margin: 10px;
+    position: relative;
+}
+.info>.picture {
+    display: none;
+}
+
+.picture a {
+    display: block;
+    background: #7E57C2;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 100px;
+    padding: 5px 10px;
+    font-family: sans-serif;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.info h4 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 48px;
+    /*    margin: 15px;*/
+    color: #7E57C2;
+    background: #fafafa;
+    /*    position: absolute;*/
+    /*
+    line-height: 60px;
+    left: 20px;
+    width: 360px;
+*/
+    /*    z-index: 1;*/
+}
+
+.info h5 {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color: #555;
+    margin-top: 10px;
+}
+
+.info p {
+    font-family: sans-serif;
+    line-height: 27px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.picture img {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+}
+
+.feedback {
+    /*    background: dimgrey;*/
+    overflow: hidden;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.feedback form input {
+    display: block;
+    margin: auto;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 5px;
+    border-radius: 10px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+.feedback h3 {
+    /*    color: aliceblue;*/
+    margin: 20px 0 25px;
+}
+
+.feedback form {
+    background: #7E57C2;
+    max-width: 500px;
+    width: 90%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.4);
+}
+.feedback textarea {
+    margin: auto;
+    display: block;
+    resize: none;
+    width: 80%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+    border: none;
+    font-weight: bold;
+}
+
+.feedback h4 {
+    color: aliceblue;
+    text-align: center;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+.magic {
+    background: url("Project.jpg");
+    height: 550px;
+    background-size: cover;
+    overflow: hidden;
+    width: 47%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.magic2 {
+    background: url("Project2.jpg");
+    height: 550px;
+    background-size: cover;
+    overflow: hidden;
+    width: 47%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.project {
+/*    position: relative;*/
+    text-align: center;
+}
+
+.project section {
+    display: inline-block;
+    color: aliceblue;
+    position: absolute;
+    bottom: 60px;
+    padding-left: 10px;
+    left: 20px;
+    text-align: left;
+}
+
+.project p {
+    font-family: 'Russo One', sans-serif;
+    font-size: 55px;
+}
+
+.project h4 {
+    font-family: sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.project a {
+    text-decoration: none;
+    color: aliceblue;
+    background: #7E57C2;
+    margin-top: 10px;
+}
+@media (min-width:600px) {
+    .team section:nth-of-type(odd) {
+        margin-right: 2%;
+    }
+    header>nav {
+        display: none;
+    }
+    #check {
+        display: none;
+    }
+}
+@media (max-width:600px) {
+    #check {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    label {
+        display: inline-block;
+        position: absolute;
+        background: #FFEA00;
+        width: 50px;
+        height: 50px;
+        right: 0;
+        top: 0;
+    }
+    header {
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        background: whitesmoke;
+        top: 0;
+    }
+    header>nav {
+        position: fixed;
+        z-index: 1;
+        /* background: rgba(255, 255, 255, 0.5); */
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        color: #fff;
+        height: calc(100% - 50px);
+        width: 100%;
+        transform: translateX(100%);
+        transition: 1s;
+        opacity: 0;
+    }
+    #check:checked~nav {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    header>nav a {
+        /* background: white; */
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 20px;
+        width: 200px;
+        line-height: 70px;
+        text-decoration: none;
+        color: white;
+        font-family: sans-serif;
+    }
+    #DesktopNav {
+        display: none;
+    }
+    #AboutUs section {
+        width: 90%;
+        margin: auto;
+    }
+    #AboutUs p {
+        text-align: justify;
+    }
+    #AboutUs p img {
+        display: inline-block;
+        float: right;
+        margin-left: 10px;
+    }
+    #AboutUs>img {
+        display: none;
+    }
+    .team section {
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: justify;
+        margin-bottom: 10px;
+    } 
+    .info p {
+        text-align: justify;
+    }
+    .info {
+        width: 90%;
+        float: none;
+        margin: auto;
+    } 
+    .project>div {
+        width: 90%;
+        background-position: center;
+    }
+    .project p {
+        text-shadow:0px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+    form {
+        box-sizing: border-box;
+    }
+    .picture {
+        width: 100%;
+    }
+    .info>.picture {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+        margin: 5px 0;
+    }
+    .info~.picture {
+        display: none;
+    }
+    .banner {
+        margin-top: 50px;
+    }
+}
